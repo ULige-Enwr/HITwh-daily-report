@@ -220,7 +220,7 @@ def submit(jid, jktoken, todayid):
 
 
 def tianbao():
-    while True:
+    for _ in range(5):
         try:
             jid = getJESSIONID()
             yzm = getYzm(jid)
