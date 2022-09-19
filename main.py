@@ -233,7 +233,7 @@ def tianbao():
             submit(jid, jktoken, todayid)
         except Exception as e:
             PROCESS.append("❌ fail,retrying......\n")
-            PROCESS.extend(list(e.args))
+#             PROCESS.extend(list(e.args))
             print(e.args)
             time.sleep(5)
         else:
